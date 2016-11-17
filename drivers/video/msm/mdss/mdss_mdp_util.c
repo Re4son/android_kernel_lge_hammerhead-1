@@ -323,7 +323,7 @@ int mdss_mdp_get_plane_sizes(u32 format, u32 w, u32 h,
 	struct mdss_mdp_plane_sizes *ps, u32 bwc_mode, bool rotation)
 {
 	struct mdss_mdp_format_params *fmt;
-	int i, rc;
+	int i, rc = 0;
 	u32 bpp;
 	if (ps == NULL)
 		return -EINVAL;
@@ -673,7 +673,7 @@ static int mdss_mdp_map_buffer(struct mdss_mdp_img_data *data)
 int mdss_mdp_data_get(struct mdss_mdp_data *data, struct msmfb_data *planes,
 		int num_planes, u32 flags)
 {
-	int i, rc;
+	int i, rc = 0;
 
 	if ((num_planes <= 0) || (num_planes > MAX_PLANES))
 		return -EINVAL;
@@ -698,7 +698,7 @@ int mdss_mdp_data_get(struct mdss_mdp_data *data, struct msmfb_data *planes,
 
 int mdss_mdp_data_map(struct mdss_mdp_data *data)
 {
-	int i, rc;
+	int i, rc = 0;
 
 	if (!data || !data->num_planes)
 		return -EINVAL;
