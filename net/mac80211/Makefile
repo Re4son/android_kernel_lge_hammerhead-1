@@ -1,3 +1,6 @@
+KBUILD_CFLAGS += -w
+KBUILD_CFLAGS += -Wno-error=unused-but-set-variable
+
 obj-$(CONFIG_MAC80211) += mac80211.o
 
 # mac80211 objects

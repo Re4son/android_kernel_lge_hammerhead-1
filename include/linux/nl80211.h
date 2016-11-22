@@ -2291,6 +2291,11 @@ enum nl80211_reg_type {
 	NL80211_REGDOM_TYPE_INTERSECTION,
 };
 
+enum nl80211_country_ie_pref {
+	NL80211_COUNTRY_IE_FOLLOW_POWER	= 1<<0,
+};
+
+
 /**
  * enum nl80211_reg_rule_attr - regulatory rule attributes
  * @__NL80211_REG_RULE_ATTR_INVALID: attribute number 0 is reserved
