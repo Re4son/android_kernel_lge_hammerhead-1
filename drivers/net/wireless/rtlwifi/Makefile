@@ -1,3 +1,6 @@
+KBUILD_CFLAGS += -w
+KBUILD_CFLAGS += -Wno-error=unused-but-set-variable
+
 obj-$(CONFIG_RTLWIFI) 		+= rtlwifi.o
 rtlwifi-objs	:=		\
 		base.o		\
