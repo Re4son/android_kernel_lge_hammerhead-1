@@ -5,6 +5,7 @@
  *  License.
  */
 
+#include <linux/proc_fs.h>
 #include <linux/export.h>
 #include <linux/nsproxy.h>
 #include <linux/slab.h>
